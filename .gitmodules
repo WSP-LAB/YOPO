@@ -1,0 +1,21 @@
+[submodule "AdFlush"]
+	path = AdFlush
+	url = https://github.com/godeastone/AdFlush.git
+[submodule "OpenWPM"]
+	path = OpenWPM
+	url = https://github.com/godeastone/OpenWPM.git
+[submodule "PageGraph/pagegraph-query"]
+	path = PageGraph/pagegraph-query
+	url = https://github.com/godeastone/pagegraph-query.git
+[submodule "PageGraph/pagegraph-crawl"]
+	path = PageGraph/pagegraph-crawl
+	url = https://github.com/godeastone/pagegraph-crawl.git
+[submodule "A4"]
+	path = A4
+	url = https://github.com/godeastone/A4.git
+[submodule "mitmproxy"]
+	path = mitmproxy
+	url = https://github.com/godeastone/mitmproxy.git
+[submodule "WebGraph"]
+	path = WebGraph
+	url = https://github.com/godeastone/WebGraph.git
