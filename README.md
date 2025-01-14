@@ -1,4 +1,4 @@
-YOPO Artifact
+YOPO
 ========
 
 YOPO is an attack framework designed to generate a universal adversarial
