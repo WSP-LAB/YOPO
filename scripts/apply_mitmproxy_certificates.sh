@@ -3,6 +3,9 @@
 cd /yopo-artifact/mitmproxy
 source /yopo-artifact/mitmproxy/venv/bin/activate
 
+pip install markupsafe==2.0.1
+pip install blinker==1.4
+
 # Run mitmdump in the background
 mitmdump &
 MITMDUMP_PID=$!
