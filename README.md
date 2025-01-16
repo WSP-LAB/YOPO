@@ -9,7 +9,7 @@ please refer to our [paper](https://godeastone.github.io/papers/shin-acsac24.pdf
 "You Only Perturb Once: Bypassing (Robust) Ad-Blockers Using Universal 
 Adversarial Perturbations", which appeared in ACSAC 2024.
 
-## Hardware requirements
+## Requirements
 
 YOPO requires a Linux machine with an NVIDIA GPU. Due to its use of multiple
 processes for parallel HTML file manipulation, we recommend a machine with at
@@ -52,7 +52,7 @@ Build the Docker image using the provided Dockerfile and start a Docker
 container.
 
 ```
-$ git clone https://github.com/WSP-LAB/YOPO.git
+$ git clone --recurse-submodules https://github.com/WSP-LAB/YOPO.git
 $ cd scripts
 $ ./build.sh && ./launch_container.sh
 ```
