@@ -245,6 +245,8 @@ def delete_test_rows(mode):
         "/yopo-artifact/data/dataset/from_{}/features_raw_except_target.csv".format(mode),   
     ]
 
+    valid_values = {0, 1, True, False}
+
     if mode == "adgraph":
         csv_files.append("/yopo-artifact/data/dataset/from_adgraph/features_raw.csv")
 
@@ -258,11 +260,14 @@ def delete_test_rows(mode):
                 data = data[data['CLASS'] != "999"]
                 data = data[data['CLASS'] != 999]
 
-            final_row_count = len(data)
+            filtered_df = data[data['CLASS'].isin(valid_values)]
+
+            final_row_count = len(filtered_df)
             deleted_row_count = initial_row_count - final_row_count
 
             print(f"Initial rows: {initial_row_count}, Final rows: {final_row_count}, Rows deleted: {deleted_row_count}")
-            data.to_csv(file_path, index=False)
+            filtered_df.to_csv(file_path, index=False)
 
         except Exception as e:
             print(f"Error processing file {file_path}: {e}")
+
