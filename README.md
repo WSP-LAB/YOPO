@@ -69,7 +69,7 @@ $ ./apply_mitmproxy_certificates.sh
 
 ### Step 3: Save HTML files
 
-Before crawling webpages, save the HTML files, as YOPO needs them for perturbation.
+Before crawling webpages, save the HTML files from Traco's Top-10K websites.
 
 ```
 $ cd scripts/crawler
@@ -89,7 +89,7 @@ $ ./run_crawler.sh [TARGET]
 
 ### Step 5: Train ATS blockers
 
-Train the target ATS blockers using extracted features by running the `train_adblocker.sh` script.
+Train the target ATS blockers with the extracted features by running the `train_adblocker.sh` script.
 ```
 $ cd scripts/crawler
 $ ./train_adblocker.sh [TARGET]
@@ -97,7 +97,7 @@ $ ./train_adblocker.sh [TARGET]
 
 ### Step 6: Train surrogate models
 
-Generate training data and train a surrogate model for each target ATS blocker by execute the `train_surrogate.sh` script.
+Train a surrogate model for each target ATS blocker by executing the `train_surrogate.sh` script.
 
 ```
 $ cd scripts
@@ -105,17 +105,16 @@ $ ./train_surrogate.sh [TARGET]
 ```
 
 ### Step 7: Perform the attack
-To run the attack pipeline, execute the script `run_attack` by passing the following arguments:
+To run the attack pipeline, execute the `run_attack` script with the following arguments:
   * EPSILON: `5`, `10`, `20`, `40`
   * COST_MODEL_TYPE: `DC`, `HSC`, `HCC`, `HJC`
   * TARGET: `adgraph`, `webgraph`, `adflush`, `pagegraph`
 
-The attack success rates and costs are saved in the `/yopo-artifact/result` directory.
 ```
 $ cd scripts
 $ ./attack_pipeline_one_setting.sh [EPSILON] [COST_MODEL_TYPE] [TARGET]
 ```
-
+The attack success rates and costs are saved in the `/yopo-artifact/result` directory.
 
 ## Authors
 This research project has been conducted by [WSP Lab](https://wsp-lab.github.io/)
