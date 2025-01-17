@@ -4,7 +4,7 @@ YOPO
 YOPO is an attack framework designed to generate a universal adversarial
 perturbation that deceives machine learning-based ATS blockers in a
 cost-effective manner. YOPO acheives high attack success rates agaisnt
-four ML-based ATS blockers with a single perturbation. For more details,
+four state-of-the-art ATS blockers with a single perturbation. For more details,
 please refer to our [paper](https://godeastone.github.io/papers/shin-acsac24.pdf),
 "You Only Perturb Once: Bypassing (Robust) Ad-Blockers Using Universal 
 Adversarial Perturbations", which appeared in ACSAC 2024.
