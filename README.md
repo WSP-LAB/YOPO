@@ -59,7 +59,7 @@ $ ./build.sh && ./launch_container.sh
 
 ### Step 2: Install the mitmproxy CA certificate
 
-Install the CA certificate for `mitmproxy`, which we use to test
+Assuming you are inside the Docker container, install the CA certificate for `mitmproxy`, which we use to test
 whether modified HTML/JS files can bypass the target ATS blockers.
 
 ```
