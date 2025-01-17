@@ -17,3 +17,4 @@ cd /yopo-artifact/
 mkdir -p ~/.pki/nssdb
 certutil -d sql:$HOME/.pki/nssdb -A -t "C,," -n "mitmproxy" -i /root/.mitmproxy/mitmproxy-ca-cert.pem
 
+echo "Applying mitmproxy certificates is completed!"
