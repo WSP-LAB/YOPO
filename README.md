@@ -105,14 +105,14 @@ $ ./train_surrogate.sh [TARGET]
 ```
 
 ### Step 7: Perform the attack
-To run the attack pipeline, execute the `run_attack` script with the following arguments:
+To run the attack pipeline, execute the `run_attack.sh` script with the following arguments:
   * EPSILON: `5`, `10`, `20`, `40`
   * COST_MODEL_TYPE: `DC`, `HSC`, `HCC`, `HJC`
   * TARGET: `adgraph`, `webgraph`, `adflush`, `pagegraph`
 
 ```
 $ cd scripts
-$ ./attack_pipeline_one_setting.sh [EPSILON] [COST_MODEL_TYPE] [TARGET]
+$ ./run_attack.sh [EPSILON] [COST_MODEL_TYPE] [TARGET]
 ```
 The attack success rates and costs will be saved in the `/yopo-artifact/result` directory.
 
