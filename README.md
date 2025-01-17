@@ -114,7 +114,7 @@ To run the attack pipeline, execute the `run_attack` script with the following a
 $ cd scripts
 $ ./attack_pipeline_one_setting.sh [EPSILON] [COST_MODEL_TYPE] [TARGET]
 ```
-The attack success rates and costs are saved in the `/yopo-artifact/result` directory.
+The attack success rates and costs will be saved in the `/yopo-artifact/result` directory.
 
 ## Authors
 This research project has been conducted by [WSP Lab](https://wsp-lab.github.io/)
