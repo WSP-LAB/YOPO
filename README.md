@@ -78,7 +78,7 @@ $ ./save_html.sh
 
 ### Step 4: Crawl websites
 
-Crawl the websites using the target ATS blockers by executing the `crawl_adblocker.sh` script,
+Crawl the websites using the target ATS blockers by executing the `run_crawler.sh` script,
 passing the name of the target ATS blocker.
 Each ATS blocker crawls the saved HTML files and extracts features.
   * TARGET: `adgraph`, `webgraph`, `adflush`, `pagegraph`
