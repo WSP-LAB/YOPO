@@ -8,6 +8,7 @@ monitor_path="/yopo-artifact/scripts/crawler/adgraph/running_check"
 
 echo "[Crawling phase 0] Unzip AdGraph chrome binary..."
 unzip /yopo-artifact/A4/AdGraphAPI/AdGraph-Ubuntu-16.04/chrome.zip -d /yopo-artifact/A4/AdGraphAPI/AdGraph-Ubuntu-16.04/
+chmod 755 /yopo-artifact/A4/AdGraphAPI/AdGraph-Ubuntu-16.04/chrome
 
 echo "[Crawling phase 1] Generating timeline files using AdGraph binary..."
 echo "[Crawling phase 1] Enter 'tmux attach -t crawling' or 'tmux attach -t crawling_python' to see what happens!"
