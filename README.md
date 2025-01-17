@@ -19,30 +19,30 @@ least 32 CPU cores, 256 GB of system memory, and 300 GB of disk space. Our tests
 
 To run our scripts, the following software dependencies must be installed:
 
-1. Docker
+1. **Docker**
 
-  Install Docker by following the instructions
-  [here](https://docs.docker.com/engine/install/).
+   Install Docker by following the instructions
+   [here](https://docs.docker.com/engine/install/).
 
-2. Run Docker without root privileges
+2. **Run Docker without root privileges**
 
-  Our scripts are designed to avoid requiring root privileges. To manage Docker
-  as a non-root user, follow the instructions
-  [here](https://docs.docker.com/engine/install/linux-postinstall/#manage-docker-as-a-non-root-user).
+   Our scripts are designed to avoid requiring root privileges. To manage Docker
+   as a non-root user, follow the instructions
+   [here](https://docs.docker.com/engine/install/linux-postinstall/#manage-docker-as-a-non-root-user).
 
-3. CUDA Toolkit 12.4
+3. **CUDA Toolkit 12.4**
 
-  YOPO is tested with CUDA Toolkit 12.4. Please install CUDA Toolkit 12.4 from
-  this [link](https://developer.nvidia.com/cuda-12-4-0-download-archive). If
-  using a different CUDA version, update the base image in the Dockerfile
-  accordingly. Available base images can be found
-  [here](https://hub.docker.com/r/pytorch/pytorch/tags).
+   YOPO is tested with CUDA Toolkit 12.4. Please install CUDA Toolkit 12.4 from
+   this [link](https://developer.nvidia.com/cuda-12-4-0-download-archive). If
+   using a different CUDA version, update the base image in the Dockerfile
+   accordingly. Available base images can be found
+   [here](https://hub.docker.com/r/pytorch/pytorch/tags).
 
-4. NVIDIA Container Toolkit
+4. **NVIDIA Container Toolkit**
 
-  To enable GPU access within Docker containers, install the NVIDIA Container
-  Toolkit by following the guide
-  [here](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html).
+   To enable GPU access within Docker containers, install the NVIDIA Container
+   Toolkit by following the guide
+   [here](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html).
 
 ## Usage
 
