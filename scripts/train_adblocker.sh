@@ -12,21 +12,22 @@ target="$1"
 
 echo "===== Training target AdBlocker :${target} ====="
 
-# Export the variables
-export epsilon cost_type
+# Activate conda env
+source /opt/anaconda/etc/profile.d/conda.sh
+conda activate adgraph
 
 case $target in
     "adgraph")
-        ./train_random_forest_adgraph.sh
+        python3 train_random_forest_adgraph.py
         ;;
     "webgraph")
-        ./train_random_forest_webgraph.sh
+        python3 train_random_forest_webgraph.py
         ;;
     "adflush")
-        ./train_random_forest_adflush.sh
+        python3 train_random_forest_adflush.py
         ;;
     "pagegraph")
-        ./train_random_forest_pagegraph.sh
+        python3 train_random_forest_pagegraph.py
         ;;
     *)
         echo "Unknown target: $target"
