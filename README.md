@@ -118,7 +118,7 @@ The attack success rates and costs will be saved in the `/yopo-artifact/result` 
 
 ## Authors
 This research project has been conducted by [WSP Lab](https://wsp-lab.github.io/) at KAIST
-ans [SAIL Lab](https://secure-ai.systems/) at Oregon State University.
+and [SAIL Lab](https://sanghyun-hong.com/index.html) at Oregon State University.
 
 * [Dongwon Shin](https://godeastone.github.io/)
 * [Suyoung Lee](https://leeswimming.com/)
