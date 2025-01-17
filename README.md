@@ -76,7 +76,7 @@ $ cd scripts/crawler
 $ ./save_html.sh
 ```
 
-### Step 4: Run ML-based ATS blockers
+### Step 4: Run ATS blockers
 
 Run the target ATS blockers by executing the `crawl_adblocker.sh` script,
 passing the name of the target ATS blocker.
@@ -84,10 +84,10 @@ Each ATS blocker crawls the saved HTML files and extracts features.
   * TARGET: `adgraph`, `webgraph`, `adflush`, `pagegraph`
 ```
 $ cd scripts/crawler
-$ ./crawl_adblocker.sh [TARGET]
+$ ./run_crawler.sh [TARGET]
 ```
 
-### Step 5: Train ML-based ATS blockers
+### Step 5: Train ATS blockers
 
 Train the target ATS blockers using extracted features by running the `train_adblocker.sh` script.
 ```
