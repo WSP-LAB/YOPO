@@ -14,16 +14,16 @@ echo "===== Crawling target AdBlocker :${target} ====="
 
 case $target in
     "adgraph")
-        ./run_crawler_adgraph.sh
+        ./crawl_adgraph.sh
         ;;
     "webgraph")
-        ./run_crawler_webgraph.sh
+        ./crawl_webgraph.sh
         ;;
     "adflush")
-        ./run_crawler_adflush.sh
+        ./crawl_adflush.sh
         ;;
     "pagegraph")
-        ./run_crawler_pagegraph.sh
+        ./crawl_pagegraph.sh
         ;;
     *)
         echo "Unknown target: $target"
