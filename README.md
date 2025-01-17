@@ -5,7 +5,7 @@ YOPO is an attack framework designed to generate a universal adversarial
 perturbation that deceives machine learning-based ATS blockers in a
 cost-effective manner. YOPO acheives high attack success rates agaisnt
 four state-of-the-art ATS blockers with a single perturbation. For more details,
-please refer to our [paper](https://godeastone.github.io/papers/shin-acsac24.pdf){:target="_blank"},
+please refer to our [paper](https://godeastone.github.io/papers/shin-acsac24.pdf),
 "You Only Perturb Once: Bypassing (Robust) Ad-Blockers Using Universal 
 Adversarial Perturbations", which appeared in ACSAC 2024.
 
@@ -22,13 +22,13 @@ To run our scripts, the following software dependencies must be installed:
 1. **Docker**
 
    Install Docker by following the instructions
-   [here](https://docs.docker.com/engine/install/){:target="_blank"}.
+   [here](https://docs.docker.com/engine/install/).
 
 2. **Run Docker without root privileges**
 
    Our scripts are designed to avoid requiring root privileges. To manage Docker
    as a non-root user, follow the instructions
-   [here](https://docs.docker.com/engine/install/linux-postinstall/#manage-docker-as-a-non-root-user){:target="_blank"}.
+   [here](https://docs.docker.com/engine/install/linux-postinstall/#manage-docker-as-a-non-root-user).
 
 3. **CUDA Toolkit 12.4**
 
@@ -36,13 +36,13 @@ To run our scripts, the following software dependencies must be installed:
    this [link](https://developer.nvidia.com/cuda-12-4-0-download-archive){:target="_blank"}. If
    using a different CUDA version, update the base image in the Dockerfile
    accordingly. Available base images can be found
-   [here](https://hub.docker.com/r/pytorch/pytorch/tags){:target="_blank"}.
+   [here](https://hub.docker.com/r/pytorch/pytorch/tags).
 
 4. **NVIDIA Container Toolkit**
 
    To enable GPU access within Docker containers, install the NVIDIA Container
    Toolkit by following the guide
-   [here](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html){:target="_blank"}.
+   [here](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html).
 
 ## Usage
 
@@ -117,13 +117,13 @@ $ ./attack_pipeline_one_setting.sh [EPSILON] [COST_MODEL_TYPE] [TARGET]
 The attack success rates and costs will be saved in the `/yopo-artifact/result` directory.
 
 ## Authors
-This research project has been conducted by [WSP Lab](https://wsp-lab.github.io/){:target="_blank"} at KAIST
-ans [SAIL Lab](https://secure-ai.systems/){:target="_blank"} at Oregon State University.
+This research project has been conducted by [WSP Lab](https://wsp-lab.github.io/) at KAIST
+ans [SAIL Lab](https://secure-ai.systems/) at Oregon State University.
 
-* [Dongwon Shin](https://godeastone.github.io/){:target="_blank"}
-* [Suyoung Lee](https://leeswimming.com/){:target="_blank"}
-* [Sanghyun Hong](https://sanghyun-hong.com/index.html){:target="_blank"}
-* [Sooel Son](https://sites.google.com/site/ssonkaist/home){:target="_blank"}
+* [Dongwon Shin](https://godeastone.github.io/)
+* [Suyoung Lee](https://leeswimming.com/)
+* [Sanghyun Hong](https://sanghyun-hong.com/index.html)
+* [Sooel Son](https://sites.google.com/site/ssonkaist/home)
 
 ## Citation
 To cite our paper:
