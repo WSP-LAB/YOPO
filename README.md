@@ -91,7 +91,7 @@ $ ./run_crawler.sh [TARGET]
 
 Train the target ATS blockers with the extracted features by running the `train_adblocker.sh` script.
 ```
-$ cd scripts/crawler
+$ cd scripts
 $ ./train_adblocker.sh [TARGET]
 ```
 
