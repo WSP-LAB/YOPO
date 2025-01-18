@@ -43,12 +43,14 @@ python3 /yopo-artifact/scripts/perturb_html/feature_map_back_webgraph.py --attac
 
 echo "[Phase 2-3] Crawling modified websites for WebGraph... Total map_count: $map_count"
 rm -rf /yopo-artifact/OpenWPM/datadir_proxy_webgraph
+rm -rf /yopo-artifact/scripts/perturb_html/running_check_webgraph
 mkdir /yopo-artifact/OpenWPM/datadir_proxy_webgraph
 mkdir /yopo-artifact/OpenWPM/datadir_proxy_webgraph/content_dir
 mkdir /yopo-artifact/OpenWPM/datadir_proxy_webgraph/crawl_dir
 mkdir /yopo-artifact/OpenWPM/datadir_proxy_webgraph/log_dir
 mkdir /yopo-artifact/OpenWPM/datadir_proxy_webgraph/screenshots
 mkdir /yopo-artifact/OpenWPM/datadir_proxy_webgraph/sources
+mkdir /yopo-artifact/scripts/perturb_html/running_check_webgraph
 
 monitor_path="/yopo-artifact/scripts/perturb_html/running_check_webgraph"
 
