@@ -16,6 +16,7 @@ cd /yopo-artifact/mitmproxy
 echo "[Crawling phase 3] Building PageGraph..."
 rm -rf /yopo-artifact/data/rendering_stream/pagegraph/*
 cd /yopo-artifact/PageGraph/pagegraph-crawl
+npm install argparse
 python build_pagegraph.py --map-local-file /yopo-artifact/PageGraph/pagegraph-query/final_url_to_modified_html_filepath_mapping_AE.csv -b /usr/bin/brave-browser -o /yopo-artifact/data/rendering_stream/pagegraph -j $NUM_CRAWLER -t 600
 rm -rf /tmp/pagegraph-profile--*
 tmux kill-server
