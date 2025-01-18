@@ -245,7 +245,7 @@ def delete_test_rows(mode):
         "/yopo-artifact/data/dataset/from_{}/features_raw_except_target.csv".format(mode),   
     ]
 
-    valid_values = {0, 1, True, False}
+    valid_values = {0, 1, True, False, "AD", "NONAD"}
 
     if mode == "adgraph":
         csv_files.append("/yopo-artifact/data/dataset/from_adgraph/features_raw.csv")
