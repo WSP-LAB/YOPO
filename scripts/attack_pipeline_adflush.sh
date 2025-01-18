@@ -43,13 +43,14 @@ python3 /yopo-artifact/scripts/perturb_html/feature_map_back_adflush.py --attack
 
 echo "[Phase 2-3] Crawling modified websites for AdFlush... Total map_count: $map_count"
 rm -rf /yopo-artifact/OpenWPM/datadir_proxy_adflush
+rm -rf /yopo-artifact/scripts/perturb_html/running_check_adflush
 mkdir /yopo-artifact/OpenWPM/datadir_proxy_adflush
 mkdir /yopo-artifact/OpenWPM/datadir_proxy_adflush/content_dir
 mkdir /yopo-artifact/OpenWPM/datadir_proxy_adflush/crawl_dir
 mkdir /yopo-artifact/OpenWPM/datadir_proxy_adflush/log_dir
 mkdir /yopo-artifact/OpenWPM/datadir_proxy_adflush/screenshots
 mkdir /yopo-artifact/OpenWPM/datadir_proxy_adflush/sources
-
+mkdir /yopo-artifact/scripts/perturb_html/running_check_adflush
 
 monitor_path="/yopo-artifact/scripts/perturb_html/running_check_adflush"
 
