@@ -39,6 +39,8 @@ python3 /yopo-artifact/scripts/perturb_html/feature_map_back_adgraph.py --attack
 
 echo "[Phase 2-3] Crawling modified websites for AdGraph... Total map_count: $map_count"
 rm -rf /root/rendering_stream
+rm -rf /yopo-artifact/scripts/perturb_html/running_check_adgraph
+mkdir /yopo-artifact/scripts/perturb_html/running_check_adgraph
 
 monitor_path="/yopo-artifact/scripts/perturb_html/running_check_adgraph"
 
