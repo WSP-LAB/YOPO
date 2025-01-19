@@ -32,13 +32,13 @@ echo "[Crawling phase 5] Merging extracted features..."
 cd /yopo-artifact/scripts/crawler
 python3 -c "from utils import merging_unmod_pagegraph; merging_unmod_pagegraph()"
 
-# Add test rows for one-hot encoding of binary features
-python3 -c "from utils import add_test_rows; add_test_rows('pagegraph')"
-
 echo "[Crawling phase 5] Labelling merged features..."
 source /opt/anaconda/etc/profile.d/conda.sh
 conda activate adgraph
 python3 /yopo-artifact/scripts/crawler/pagegraph/label_features.py
+
+# Add test rows for one-hot encoding of binary features
+python3 -c "from utils import add_test_rows; add_test_rows('pagegraph')"
 
 echo "[Crawling phase 6] Preprocessing data and select target request candidates..."
 python3 /yopo-artifact/scripts/crawler/pagegraph/preprocessing_RF.py
