@@ -28,6 +28,7 @@ new_data['CLASS'] = 1
 columns_to_replace = feature_names_pagegraph.FEATURES_BINARY
 for column in columns_to_replace:
     new_data[column] = new_data[column].replace({True: 1, False: 0})
+    new_data[column] = new_data[column].replace({"True": 1, "False": 0})
 
 to_exclude = ["NETWORK_REQUEST_URL" ,"FINAL_URL"]
 new_data_drop = new_data.drop(to_exclude, axis=1)
