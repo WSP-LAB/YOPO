@@ -11,7 +11,7 @@ Adversarial Perturbations", which appeared in ACSAC 2024.
 
 ## Requirements
 
-YOPO requires a Linux machine with an NVIDIA GPU. Due to its use of multiple
+YOPO requires a Linux machine with an NVIDIA graphic card. Due to its use of multiple
 processes for parallel HTML file manipulation, we recommend a machine with at
 least 32 CPU cores, 256 GB of system memory, and 300 GB of disk space. Our tests were conducted on a machine running Ubuntu 22.04 (64-bit).
 
@@ -69,7 +69,7 @@ $ ./apply_mitmproxy_certificates.sh
 
 ### Step 3: Save HTML files
 
-Before crawling webpages, save the HTML files from Traco's Top-10K websites.
+Before crawling webpages, save the HTML files from Tranco's Top-10K websites.
 
 ```
 $ cd scripts/crawler
