@@ -6,7 +6,7 @@ perturbation that deceives machine learning-based ATS blockers in a
 cost-effective manner. YOPO acheives high attack success rates agaisnt
 four state-of-the-art ATS blockers with a single perturbation. For more details,
 please refer to our [paper](https://godeastone.github.io/papers/shin-acsac24.pdf),
-"You Only Perturb Once: Bypassing (Robust) Ad-Blockers Using Universal 
+"You Only Perturb Once: Bypassing (Robust) Ad-Blockers Using Universal
 Adversarial Perturbations", which appeared in ACSAC 2024.
 
 ## Requirements
@@ -33,7 +33,7 @@ To run our scripts, the following software dependencies must be installed:
 3. **CUDA Toolkit 12.4**
 
    YOPO is tested with CUDA Toolkit 12.4. Please install CUDA Toolkit 12.4 from
-   this [link](https://developer.nvidia.com/cuda-12-4-0-download-archive){:target="_blank"}. If
+   this [link](https://developer.nvidia.com/cuda-12-4-0-download-archive). If
    using a different CUDA version, update the base image in the Dockerfile
    accordingly. Available base images can be found
    [here](https://hub.docker.com/r/pytorch/pytorch/tags).
