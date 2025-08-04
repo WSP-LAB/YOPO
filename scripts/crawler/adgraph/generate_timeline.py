@@ -53,4 +53,4 @@ for url in url_list:
         pass
 
 # Finished!
-f = open("/yopo-artifact/scripts/crawler/adgraph/running_check/End_{}".format(str(int(args.crawler_id) + 1)), "a")
+f = open("/yopo-artifact/scripts/crawler/adgraph/running_check_adgraph/End_{}".format(str(int(args.crawler_id) + 1)), "a")
